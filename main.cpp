@@ -7,11 +7,6 @@ typedef long double ld;
 #define F first
 #define S second
 
-void fast(){
-    ios_base::sync_with_stdio(false), ios::sync_with_stdio(false);
-    cin.sync_with_stdio(false), cout.sync_with_stdio(false);
-    cin.tie(nullptr), cout.tie(nullptr);
-}
 
 const int N = 200005;
 vector<int> adj[N];
@@ -48,13 +43,6 @@ bool isCyclic(int node){
     vis[node] = 1;
     return false;
 }
-
-//////////////////////////////////////////////////////
-// think of  brute force, greedy, equation, frequency, prefix, sorting (two pointers) and binary search
-// think of applying operations on greatest/smallest element till works (multiset/heap)
-//const int N = 200005;
-//ll frq[130];
-//const ll mod = 1e9+7;
 
 
 void solve(){
