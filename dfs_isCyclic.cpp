@@ -46,7 +46,16 @@ bool isCyclic(int node){
 
 
 void solve(){
-    
+    memset(vis, 0, sizeof(vis));
+    for(int i=1; i<=n; i++){
+          adj[i].clear();
+      }
+
+     for(int i=0; i<m; i++){
+          int u, v;
+          cin >> u >> v;
+          adj[v].push_back(u);
+       }
 }
 
 int main(){
