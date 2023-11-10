@@ -18,7 +18,7 @@ int vis[N] = {0};
 bool isCyclic(int node, int p){
     vis[node] = 1;
     for(auto ch : adj[node]){
-        if(vis[ch] == 0 && ch != p){
+        if(vis[ch] == 1 && ch != p){
             return true;
         }
         else if(!vis[ch]){
